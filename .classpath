@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_331">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/**"/>
+		</accessrules>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/AlternativeAuth-1.0.3.jar"/>
+	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/API/mariadb-java-client-3.0.5.jar"/>
+	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/AlternativeAPI-1.5.0.jar"/>
+	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/MyLauncherLib.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
