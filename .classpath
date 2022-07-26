@@ -9,9 +9,9 @@
 		</accessrules>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/AlternativeAuth-1.0.3.jar"/>
-	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/API/mariadb-java-client-3.0.5.jar"/>
-	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/AlternativeAPI-1.5.0.jar"/>
-	<classpathentry kind="lib" path="E:/bordel/lecteur e/minecraft/OmgServ/launcher/launcher/launcher 2/librairie/MyLauncherLib.jar"/>
+	<classpathentry kind="lib" path="MyLauncher/src/lib/AlternativeAuth-1.0.3.jar"/>
+	<classpathentry kind="lib" path="MyLauncher/src/lib/mariadb-java-client-3.0.5.jar"/>
+	<classpathentry kind="lib" path="MyLauncher/src/lib/AlternativeAPI-1.5.0.jar"/>
+	<classpathentry kind="lib" path="MyLauncher/src/lib/MyLauncherLib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
