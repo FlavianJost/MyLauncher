@@ -108,7 +108,7 @@ public class LauncherLogin extends IScreen {
 		this.loginButton.setOnAction(new EventHandler<ActionEvent>() {
 
 			public void handle(ActionEvent event) {
-				String url="jdbc:mariadb://mysql-retrocraftpvp.alwaysdata.net/retrocraftpvp_launcher?serverTimezone=UTC",User="271319",password="37ha6PUr";
+				String url="jdbc:mariadb://localhost/mabase-de-donnée?serverTimezone=UTC",User="usr",password="mbp";
 				try {
 					usernameField.setVisible(false);passwordField.setVisible(false);loginButton.setVisible(false);inscriptionButton.setVisible(false);inscriptionLabel.setVisible(false);
 

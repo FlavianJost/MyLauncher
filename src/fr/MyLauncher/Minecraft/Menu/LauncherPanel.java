@@ -69,7 +69,6 @@ public class LauncherPanel extends IScreen {
 	private Slider memorySlider;
 	private LauncherLabel windowSizeLabel;
 	private ComboBox<String> windowsSizeList;
-	//private ComboBox<String> TypeAccount;
 	private CheckBox autoLogin;
 	private GameAuth gameAuthentication;
 
@@ -111,17 +110,7 @@ public class LauncherPanel extends IScreen {
 				stage.setIconified(true);
 			}
 		});
-		/** ===================== CASE MOT DE PASSE ===================== 
-		this.passwordField = new LauncherPasswordField(root);
-		this.passwordField.setBounds(this.gameEngine.getWidth() - 360, this.gameEngine.getHeight() - 50, 220, 20);
-		this.setFontSize(14.0F);
-		this.passwordField.setFont(this.customFont);
-		this.passwordField.addStyle("-fx-background-color: rgb(230, 230, 230);");
-		this.passwordField.addStyle("-fx-text-fill: black;");
-		this.passwordField.addStyle("-fx-border-radius: 0 0 0 0;");
-		this.passwordField.addStyle("-fx-background-radius: 0 0 0 0;");
-		this.passwordField.setVoidText("Mot de passe (vide = crack)");
-		/** ===================== BOUTON DE CONNEXION ===================== */
+
 		this.loginButton = new LauncherButton("Connexion", root);
 		this.setFontSize(12.5F);
 		this.loginButton.setFont(this.customFont);
@@ -139,25 +128,6 @@ public class LauncherPanel extends IScreen {
 				}
 			}	
 		});
-		
-		/*this.microsoftButton = new LauncherButton(root);
-		LauncherImage mcaImage = new LauncherImage(root, loadImage(gameEngine, "microsoft.png"));
-		mcaImage.setSize(20, 20);
-		this.microsoftButton.setGraphic(mcaImage);
-		this.microsoftButton.setBounds(this.gameEngine.getWidth() - 40, this.gameEngine.getHeight() - 50, 20, 20);
-		this.microsoftButton.setInvisible();
-		this.microsoftButton.setOnAction(new EventHandler<ActionEvent>() {
-			public void handle(ActionEvent event) {
-				gameAuthentication2=new fr.RetroCraftPvP.MyLauncherLib.GameAuth("flavian59.jost@gmail.com", "Linuxssh5926", AccountType.RetrocraftPvP, gamefolder);
-				
-				/*gameAuthentication=new GameAuth(fr.trxyy.alternative.alternative_auth.account.AccountType.MICROSOFT);
-				showMicrosoftAuth(gameAuthentication);*/
-				/*if (gameAuthentication2.isLogged()) {
-					//System.out.println(gameAuthentication2.getSession().token);
-					updateGame(gameAuthentication2);
-				}
-			}
-		});*/
 		
 		this.settingsButton = new LauncherButton("Parametres", root);
 		this.setFontSize(13.5F);
@@ -279,19 +249,6 @@ public class LauncherPanel extends IScreen {
 		this.windowsSizeList.setOpacity(0.0D);
 		this.windowsSizeList.setVisible(false);
 		root.getChildren().add(this.windowsSizeList);
-		
-		/*this.TypeAccount=new ComboBox<String>();
-		this.populateSizeList();
-		if(config.getValue(EnumConfig.ACCOUNT_TYPE) !=null) {
-			//this.TypeAccount.setValue(MinCon.getCon(Integer.parseInt((String) config.getValue(EnumConfig.ACCOUNT_TYPE))).getDesc());
-		}
-		this.TypeAccount.setPrefSize(120, 20);
-		this.TypeAccount.setLayoutX(this.gameEngine.getWidth() - 400);
-		this.TypeAccount.setLayoutY(this.gameEngine.getHeight() - 85);
-		this.TypeAccount.setVisibleRowCount(5);
-		this.TypeAccount.setOpacity(0.0D);
-		this.TypeAccount.setVisible(false);
-		root.getChildren().add(this.TypeAccount);
 		 
 		/** ===================== SLIDER RAM LABEL SELECTIONNED ===================== */
 		this.memorySliderLabel = new LauncherLabel(root);
@@ -422,34 +379,21 @@ public class LauncherPanel extends IScreen {
 				autoLogin.setVisible(true);
 				windowSizeLabel.setVisible(true);
 				windowsSizeList.setVisible(true);
-				//TypeAccount.setVisible(true);
 				memorySliderLabel.setVisible(true);
 				memorySlider.setVisible(true);
-				//microsoftButton.setVisible(false);
 				fadeIn(saveButton, 300);
 				fadeIn(autoLogin, 300);
 				fadeIn(windowSizeLabel, 300);
 				fadeIn(windowsSizeList, 300);
-				//fadeIn(TypeAccount,300);
 				fadeIn(memorySliderLabel, 300);
 				fadeIn(memorySlider, 300);
 		    }
 		});
-		/*this.fadeOut(this.microsoftButton, 300).setOnFinished(new EventHandler<ActionEvent>() {
-		    public void handle(ActionEvent event) {
-		    	microsoftButton.setVisible(false);
-		    }
-		});*/
 		this.fadeOut(this.usernameField, 300).setOnFinished(new EventHandler<ActionEvent>() {
 		    public void handle(ActionEvent event) {
 		    	usernameField.setVisible(false);
 		    }
 		});
-		/*this.fadeOut(this.passwordField, 300).setOnFinished(new EventHandler<ActionEvent>() {
-		    public void handle(ActionEvent event) {
-		    	passwordField.setVisible(false);
-		    }
-		});*/
 	}
 	
 	private void changeToMain() {
@@ -462,16 +406,11 @@ public class LauncherPanel extends IScreen {
 		this.fadeOut(this.loginButton, 300).setOnFinished(new EventHandler<ActionEvent>() {
 		    public void handle(ActionEvent event) {
 				loginButton.setVisible(true);
-				//microsoftButton.setVisible(true);
 				settingsButton.setVisible(true);
-				//passwordField.setVisible(true);
 				usernameField.setVisible(true);
 				fadeIn(loginButton, 300);
-				//fadeIn(microsoftButton, 300);
 				fadeIn(settingsButton, 300);
 				fadeIn(usernameField, 300);
-				//fadeIn(passwordField, 300);
-				//fadeIn(microsoftButton, 300);
 		    }
 		});
 		this.fadeOut(this.autoLogin, 300).setOnFinished(new EventHandler<ActionEvent>() {
@@ -489,11 +428,6 @@ public class LauncherPanel extends IScreen {
 		    	windowsSizeList.setVisible(false);
 		    }
 		});
-		/*this.fadeOut(this.TypeAccount, 300).setOnFinished(new EventHandler<ActionEvent>() {
-			public void handle(ActionEvent event) {
-				TypeAccount.setVisible(false);
-			}
-		});*/
 		this.fadeOut(this.memorySliderLabel, 300).setOnFinished(new EventHandler<ActionEvent>() {
 		    public void handle(ActionEvent event) {
 		    	memorySliderLabel.setVisible(false);
